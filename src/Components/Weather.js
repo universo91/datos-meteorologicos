@@ -64,7 +64,7 @@ function Weather() {
 
     const getOverWatch = async () => {
         console.log( "getOverWatch" , location);
-        let url = `http://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&appid=ed8178fcbaf2d20a6e3f10c2de63c8cd`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&appid=ed8178fcbaf2d20a6e3f10c2de63c8cd`;
         let response = await fetch(url);        
         let res = await response.json(); 
         return res;                 
